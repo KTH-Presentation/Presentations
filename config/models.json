@@ -1,0 +1,12 @@
+{
+  "models": {
+    "claude_haiku_4_5": {
+      "enabled": true,
+      "availableTo": "all",
+      "displayName": "Claude Haiku 4.5",
+      "description": "Conversational creative model for haikus.",
+      "apiKeyEnvVar": "CLAUDE_HAIKU_4_5_KEY",
+      "notes": "Enabled for all clients by default. Store a private key in the environment variable named in apiKeyEnvVar if needed."
+    }
+  }
+}
