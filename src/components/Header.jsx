@@ -1,40 +1,40 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import KTH from "../assets/logos/KTH.svg";
 
-const Header = () => {
+const Header = ({ logo = KTH, textColor = "text-black", position = "relative", shadow = "shadow-[0_4px_6px_-2px_rgba(0,0,0,0.15)]" }) => {
   return (
-    <header className="shadow-[0_4px_6px_-2px_rgba(0,0,0,0.15)]">
+    <header className={`${shadow} ${textColor} ${position} top-0 left-0 z-50 w-full`}>
       <div className="h-24 px-16 flex justify-between items-center">
-        <Link to="/">
-          <img src={KTH} alt="KTH logo" />
-        </Link>
-        
+        <NavLink to="/">
+          <img src={logo} alt="KTH logo" />
+        </NavLink>
+
         {/* NAVBAR */}
-        <nav className="flex flex-row gap-8">
-          <Link
+        <nav className="flex flex-row gap-10">
+          <NavLink
             to="/grupp1"
-            className="hover:text-[#125375] hover:underline transition-transform duration-200 hover:scale-110"
+            className={({ isActive }) => `transition-transform duration-200 hover:scale-102 hover:font-semibold ${isActive ? "underline font-semibold" : ""}`}
           >
             IoT Water-Efficiency
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/grupp2"
-            className="hover:text-[#450744] hover:underline transition-transform duration-200 hover:scale-110"
+            className={({ isActive }) => `transition-transform duration-200 hover:scale-102 hover:font-semibold ${isActive ? "underline font-semibold" : ""}`}
           >
             Sustainable Community Development
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/grupp3"
-            className="hover:text-[#51822B] hover:underline transition-transform duration-200 hover:scale-110"
+            className={({ isActive }) => `transition-transform duration-200 hover:scale-102 hover:font-semibold ${isActive ? "underline font-semibold" : ""}`}
           >
             Smart Waste Management
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/grupp4"
-            className="hover:text-[#094979] hover:underline transition-transform duration-200 hover:scale-110"
+            className={({ isActive }) => `transition-transform duration-200 hover:scale-102 hover:font-semibold ${isActive ? "underline font-semibold" : ""}`}
           >
             National IoT Infrastructures
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </header>

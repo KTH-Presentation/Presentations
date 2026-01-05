@@ -19,7 +19,7 @@ export default function Dashboard() {
       {/* Korten */}
       <main className="mx-auto py-6 px-16">
         <section className="">
-          <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 text-white">
+          <div className="max-w-[1600px] mx-auto grid gap-5 sm:grid-cols-1 md:grid-cols-2 text-white">
             <DashboardCard
               title="Evaluating IoT Water-Efficiency Pilots in Sweden"
               logos={[
