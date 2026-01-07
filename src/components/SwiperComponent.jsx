@@ -7,13 +7,11 @@ const SwiperComponent = ({ children }) => {
   return (
     <Swiper
       modules={[Pagination, Scrollbar]}
-      spaceBetween={50}
+      spaceBetween={0}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true, "dynamicBullets": true }}
       scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
       className="w-full h-screen"
     >
       {children}

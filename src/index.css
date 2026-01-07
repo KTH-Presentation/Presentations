@@ -6,6 +6,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.swiper-pagination-bullet {
+  background: #ffffff86 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
 
 
 /* .swiper-slide {

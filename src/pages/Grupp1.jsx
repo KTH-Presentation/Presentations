@@ -194,7 +194,7 @@ export default function Grupp1() {
 								const opacityClass = isOpen
 									? "opacity-100"
 									: hasActive
-										? "opacity-30"
+										? "opacity-40"
 										: "opacity-50"
 
 								return (
@@ -234,7 +234,7 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
-							<div className="relative bg-[#094852] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">1</span>
 							</div>
 							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">Why This Matters</h1>
@@ -300,7 +300,7 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
-							<div className="relative bg-[#094852] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">2</span>
 							</div>
 							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">What Did We Look At?</h1>
@@ -365,7 +365,7 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
-							<div className="relative bg-[#094852] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">3</span>
 							</div>
 							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">What Have We Done?</h1>
@@ -473,7 +473,7 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
-							<div className="relative bg-[#094852] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">4</span>
 							</div>
 							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">What Have We Found?</h1>
@@ -624,7 +624,7 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
-							<div className="relative bg-[#094852] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">5</span>
 							</div>
 							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">Summary</h1>
@@ -727,7 +727,6 @@ export default function Grupp1() {
 										</div>
 									)
 								})}
-
 							</div>
 							<img className="max-w-xl" src={Team} alt="" />
 						</div>
