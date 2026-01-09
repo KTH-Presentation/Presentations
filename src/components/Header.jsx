@@ -4,7 +4,7 @@ import KTH from "../assets/logos/KTH.svg";
 const Header = ({ logo = KTH, textColor = "text-black", position = "relative", shadow = "shadow-[0_4px_6px_-2px_rgba(0,0,0,0.15)]" }) => {
   return (
     <header className={`${shadow} ${textColor} ${position} top-0 left-0 z-50 w-full`}>
-      <div className="h-24 px-16 flex justify-between items-center">
+      <div className="max-w-[1920px] mx-auto h-24 px-16 flex justify-between items-center">
         <NavLink to="/">
           <img src={logo} alt="KTH logo" />
         </NavLink>
