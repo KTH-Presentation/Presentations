@@ -34,10 +34,12 @@ const SwiperComponent = ({ children }) => {
 
   return (
     <Swiper
-      modules={[Pagination, Scrollbar]}
+      modules={[Pagination, Scrollbar, Navigation, Keyboard, A11y]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
+      keyboard={{ enabled: true, onlyInViewport: true }}
+      a11y={{ enabled: true }}
       pagination={{ clickable: true, dynamicBullets: true }}
       scrollbar={{ draggable: true }}
       
