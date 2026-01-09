@@ -10,6 +10,7 @@ import Agenda from "../assets/grupp2/2.png";
 import Agenda1 from "../assets/grupp2/8.png";
 import SlideBg from "../assets/grupp2/9.png";
 import Hand from "../assets/grupp2/hand.png";
+import ClosingBg from "../assets/grupp2/15.png";
 import Exclamation from "../assets/grupp1/icons/exclamation.svg";
 import Context from "../assets/grupp2/icons/context.svg";
 import Gap from "../assets/grupp2/icons/gap.svg";
@@ -24,8 +25,11 @@ import Complex from "../assets/grupp2/icons/complex.svg";
 import Group from "../assets/grupp2/icons/group.svg";
 import Arrow from "../assets/grupp2/icons/arrow.svg";
 import Notes from "../assets/grupp1/icons/Notes.svg";
+import Questions from "../assets/grupp1/icons/questions.svg";
 import { SwiperSlide } from "swiper/react";
 import { useState } from "react";
+import MatrixScenario from "../components/MatrixScenario.jsx";
+import ScenarioQuadrant from "../components/ScenarioQuadrant";
 
 export default function Grupp2() {
 	// Agenda toggle
@@ -59,12 +63,12 @@ export default function Grupp2() {
 	const [isOpen, setIsOpen] = useState([]);
 
 	const toggleOpen = (id) => {
-  setIsOpen((prev) => 
-    prev.includes(id) 
-      ? prev.filter((isOpen) => isOpen !== id)
-      : [...prev, id] 
-  );
-};
+		setIsOpen((prev) =>
+			prev.includes(id)
+				? prev.filter((isOpen) => isOpen !== id)
+				: [...prev, id]
+		);
+	};
 
 	return (
 		<section className="min-h-screen bg-white text-black relative">
@@ -436,7 +440,7 @@ export default function Grupp2() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Hand} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="max-w-[1920px] h-full mx-auto px-16">
-							<div className="h-full flex flex-col gap-[40%]">
+							<div className="h-full flex flex-col gap-[20%]">
 								<div>
 									<span className="text-sm font-medium text-white/60">Sustainable Community Development</span>
 									<h1 className="font-medium leading-snug text-6xl w-4/5">Enable democratized decision-making</h1>
@@ -480,7 +484,7 @@ export default function Grupp2() {
 						<div className="max-w-[1920px] h-full mx-auto px-16">
 							<span className="text-sm font-medium text-white/60">Sustainable Community Development</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">Delivering evidence based efficiency</h1>
-							<div className="h-full flex flex-col justify-between items-start pt-7">
+							<div className="h-full flex flex-col gap-8 items-start justify-center pt-7">
 								<div
 									onClick={() => toggleOpen(1)}
 									className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${!isOpen.includes(1) ? "opacity-70" : "opacity-100"}`}
@@ -541,6 +545,73 @@ export default function Grupp2() {
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Agenda point */}
+					<SwiperSlide className="text-white py-40">
+						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
+							<div className="relative bg-[#B4CBFF] w-24 h-24 rounded-full flex items-center justify-center">
+								<span className="text-4xl font-bold text-[#450744]">5</span>
+							</div>
+							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">The future of Haninge</h1>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="max-w-[1920px] h-full mx-auto px-16">
+							<div className="h-full flex flex-col gap-[20%]">
+								<div>
+									<span className="text-sm font-medium text-white/60">Sustainable Community Development</span>
+									<h1 className="font-medium leading-snug text-6xl w-4/5">Sweden 2050: <span className="block">Digitalisation scenarios</span></h1>
+								</div>
+								<p className="max-w-[30%] text-3xl">Analysing the intersection of political commitment and technological standardisation in urban planning.</p>
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="max-w-[1920px] h-full mx-auto px-16">
+							<span className="text-sm font-medium text-white/60">Sustainable Community Development</span>
+							<h1 className="font-medium leading-snug text-5xl w-4/5">2x2 Matrix scenario</h1>
+							<div className="relative w-full h-full flex flex-col items-center justify-start mt-20">
+								<MatrixScenario />
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="max-w-[1920px] h-full mx-auto px-16">
+							<span className="text-sm font-medium text-white/60">Sustainable Community Development</span>
+							<h1 className="font-medium leading-snug text-5xl w-4/5">What makes it work?</h1>
+							<div className="relative pt-12 w-full h-full flex flex-col items-center justify-start">
+								<ScenarioQuadrant />
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="max-w-[1920px] h-full mx-auto px-16">
+							<div className="h-full flex flex-col gap-[20%]">
+								<div>
+									<span className="text-sm font-medium text-white/60">Sustainable Community Development</span>
+									<h1 className="font-medium leading-snug text-6xl w-4/5">The future</h1>
+								</div>
+								<p className="max-w-[600px] text-3xl">Integrating IoT and remote sensing data into Digital Twins significantly enhances urban resilience and transparency.<span>Prioritize standardization and internal collaboration now to ensure the "Collaborative Ecosystem" becomes reality.</span></p>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className="text-white py-40">
+						<img src={ClosingBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="h-full max-w-7xl flex flex-col justify-between">
+							<div className="w-full mx-auto py-8 flex flex-col justify-center items-center h-full bg-gradient-to-r from-[#20154C] via-[#20154C] via-[65%] to-[#20154C]/0">
+								<h2 className="px-16 font-medium leading-snug text-6xl">Thanks!</h2>
+								<p className="px-16 text-4xl flex gap-4 pt-4"> <img src={Questions} alt="" />Do you have any questions?</p>
 							</div>
 						</div>
 					</SwiperSlide>
