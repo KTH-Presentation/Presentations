@@ -15,6 +15,21 @@ body {
   background: #fff !important;
 }
 
+.arrow-svg {
+  width: 100%;
+  height: auto;
+  stroke: #C8A9CA;
+  stroke-width: 0; /* using fill instead of stroke */
+  
+  /* Animation prep */
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  transition: stroke-dashoffset 0.45s ease-out;
+}
+
+.draw-arrow {
+  stroke-dashoffset: 0;
+}
 
 /* .swiper-slide {
   text-align: center;
