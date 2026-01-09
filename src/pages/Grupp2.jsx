@@ -99,7 +99,7 @@ export default function Grupp2() {
 						<img src={Slide2} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="max-w-[1920px] mx-auto px-16">
 							<h3 className="text-5xl font-semibold">Our Team</h3>
-							<div className="pt-6 md:pt-16 lg:pt-32 grid grid-cols-4">
+							<div className="pt-6 grid grid-cols-4">
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
 									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
 										{/* <img src="" alt="" /> */}
