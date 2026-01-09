@@ -35,7 +35,7 @@ const SwiperComponent = ({ children }) => {
   return (
     <Swiper
       modules={[Pagination, Scrollbar, Navigation, Keyboard, A11y]}
-      spaceBetween={50}
+      spaceBetween={0}
       slidesPerView={1}
       navigation
       keyboard={{ enabled: true, onlyInViewport: true }}
