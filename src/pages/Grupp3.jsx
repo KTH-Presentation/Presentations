@@ -46,7 +46,7 @@ export default function Grupp3() {
 								<figure className="w-36 h-36 rounded-full bg-[#DBF77F]">
 									{/* <img src="" alt="" /> */}
 								</figure>
-								<p className="text-2xl font-medium">Saga Sjösteen</p>
+								<p className="text-2xl font-medium">Saga Siösteen</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
 								<figure className="w-36 h-36 rounded-full bg-[#DBF77F]">
