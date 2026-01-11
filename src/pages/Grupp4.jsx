@@ -8,6 +8,11 @@ import Agenda from "../assets/grupp4/2.png";
 import Agenda1 from "../assets/grupp4/7.png";
 import SlideBg from "../assets/grupp4/4.png";
 import Nasa from "../assets/grupp4/nasa.png";
+import Geel from "../assets/grupp4/Geel.png";
+import Participants from "../assets/grupp4/participants.png";
+import Establish from "../assets/grupp4/establish.png";
+import Build from "../assets/grupp4/build.jpg";
+import Enable from "../assets/grupp4/enable.png";
 import Exclamation from "../assets/grupp1/icons/exclamation.svg";
 import Border from "../assets/grupp4/icons/border.svg";
 import Map from "../assets/grupp4/icons/map.svg";
@@ -15,7 +20,10 @@ import Network from "../assets/grupp4/icons/network.svg";
 import Decision from "../assets/grupp4/icons/decision.svg";
 import Heart from "../assets/grupp4/icons/heart.svg";
 import Thumb from "../assets/grupp4/icons/thumb.svg";
+import Question from "../assets/grupp4/icons/question-mark.svg";
 import Context from "../assets/grupp2/icons/context.svg";
+import Complex from "../assets/grupp2/icons/complex.svg";
+import Gap from "../assets/grupp2/icons/gap.svg";
 import { SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import ExpandableCircle from "../components/ExpandableCircle";
@@ -53,7 +61,7 @@ export default function Grupp4() {
 		{
 			key: "q1",
 			title: "Duarte, F., 2024",
-			text: "With the rapid advancement of digitalisation, there is a growing demand for scalable IoT1 solutions. Today, more than 15 billion devices are connected worldwide, a figure expected to more than double by 2030"
+			text: "With the rapid advancement of digitalisation, there is a growing demand for scalable IoT1 solutions. Today, more than 15 billion devices are connected worldwide, a figure expected to more than double by 2030"
 		},
 		{
 			key: "q2",
@@ -63,7 +71,7 @@ export default function Grupp4() {
 		{
 			key: "q3",
 			title: "Oladele, 2024",
-			text: "IoT is increasingly embedded in critical sectors2, where it enables smarter services and more efficient operations"
+			text: "IoT is increasingly embedded in critical sectors2, where it enables smarter services and more efficient operations"
 		},
 		{
 			key: "q4",
@@ -313,6 +321,138 @@ export default function Grupp4() {
 								<div className="relative flex flex-col items-start">
 									<h4 className="text-3xl font-medium">Low trust</h4>
 									{activeId === 6 && <p className="absolute lg:w-80 top-full pt-3 text-lg">Low transparency undermines public confidence</p>}
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
+						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Barriers</h1>
+						<div className="px-16 h-full max-w-[1920px] grid grid-cols-2">
+							<div className="px-16 flex flex-col items-center justify-center gap-8">
+								<div className="relative bg-[#094979] w-24 h-24 rounded-full flex items-center justify-center">
+									<img className="max-w-14" src={Exclamation} alt="" />
+								</div>
+								<h4 className="text-2xl max-w-72 font-medium">Highly sensitive data</h4>
+							</div>
+							<div className="px-16 flex flex-col items-center justify-center gap-8">
+								<div className="relative bg-[#094979] w-24 h-24 rounded-full flex items-center justify-center">
+									<img className="max-w-14" src={Complex} alt="" />
+								</div>
+								<h4 className="text-2xl max-w-72 font-medium">Complex regulatory landscape</h4>
+							</div>
+							<div className="px-16 flex flex-col items-center justify-center gap-8">
+								<div className="relative bg-[#094979] w-24 h-24 rounded-full flex items-center justify-center">
+									<img className="max-w-14" src={Question} alt="" />
+								</div>
+								<h4 className="text-2xl max-w-72 font-medium">Lack of understanding of the potential value</h4>
+							</div>
+							<div className="px-16 flex flex-col items-center justify-center gap-8">
+								<div className="relative bg-[#094979] w-24 h-24 rounded-full flex items-center justify-center">
+									<img className="max-w-14" src={Gap} alt="" />
+								</div>
+								<h4 className="text-2xl max-w-72 font-medium">Low interoperability and few standards</h4>
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="px-16  max-w-[1920px] mx-auto">
+							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
+							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
+							<span className="text-2xl font-medium">Geel's Multi-Level Perspective</span>
+							<img className="pt-[2%] max-w-4xl mx-auto" src={Geel} alt="" />
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="px-16  max-w-[1920px] mx-auto">
+							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
+							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
+							<span className="text-2xl font-medium">Interview Participants</span>
+							<img className="pt-[2%] max-w-3xl mx-auto" src={Participants} alt="" />
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="px-16  max-w-[1920px] mx-auto">
+							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
+							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
+							<span className="text-2xl font-medium">Research Design</span>
+							<ul className="pt-4 space-y-4">
+								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Philisophy<span className="text-xl font-semibold block">Interpretivist</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Theoretical Approach<span className="text-xl font-semibold block">Abductive</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Methodological Choice<span className="text-xl font-semibold block">Qualitative</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Strategy<span className="text-xl font-semibold block">Case Study</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Time Horizon<span className="text-xl font-semibold block">Cross-Sectional</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Techniques & Procedures<span className="text-xl font-semibold block">Thematic & Semi-Systematic</span></li>
+							</ul>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="px-16 max-w-[1920px] mx-auto">
+							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
+							<h1 className="font-medium leading-snug text-5xl w-4/5">The Framework Method</h1>
+							<span className="text-2xl font-medium">Research Design</span>
+							<ul className="pt-4 grid grid-cols-3 gap-8 max-w-fit">
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">1. Interview transcripts</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">2. Data Familiarization</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">3. Data Coding</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">4. Analytical Framework Developmetn</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">5. Analytical Framework Application</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">6. Data Charting</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">7. Data Interpretation</li>
+								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">8. Synthesizing findings into Discussion & Conclusion</li>
+							</ul>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
+						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Propositions for Scalable IoT Data-sharing</h1>
+						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
+							<div
+								onClick={() => toggleActive(7)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 7 ? "opacity-50" : "opacity-100"}`}
+							>
+								<div className="relative bg-[#094979] w-48 h-48 overflow-hidden rounded-full flex items-center justify-center">
+									<img className="w-48 h-48 object-cover" src={Establish} alt="" />
+								</div>
+								<div className="relative w-max flex flex-col items-start">
+									<h4 className="text-3xl font-medium">Establish</h4>
+									{activeId === 7 && <p className="absolute min-w-80 top-full pt-3 text-lg">Coherent Governance & Standardization Mechanisms</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(8)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 8 ? "opacity-50" : "opacity-100"}`}
+							>
+								<div className="relative bg-[#094979] w-48 h-48 overflow-hidden rounded-full cursor-pointer flex items-center justify-center">
+									<img className="w-48 h-48 object-cover" src={Build} alt="" />
+								</div>
+								<div className="relative w-max flex flex-col items-start">
+									<h4 className="text-3xl font-medium">Build</h4>
+									{activeId === 8 && <p className="absolute min-w-80 top-full pt-3 text-lg">Trust through Secure & Transparent Data-sharing Practices</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(9)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 9 ? "opacity-50" : "opacity-100"}`}
+							>
+								<div className="relative bg-[#094979] w-48 h-48 rounded-full overflow-hidden cursor-pointer flex items-center justify-center">
+									<img className="w-48 h-48 object-cover" src={Enable} alt="" />
+								</div>
+								<div className="relative w-max flex flex-col items-start">
+									<h4 className="text-3xl font-medium">Enable</h4>
+									{activeId === 9 && <p className="absolute min-w-80 top-full pt-3 text-lg">Continuous Learning through Collaborative Testbeds & Federated Systems</p>}
 								</div>
 							</div>
 						</div>
