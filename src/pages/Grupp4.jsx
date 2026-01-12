@@ -91,6 +91,7 @@ export default function Grupp4() {
 					{/* Title */}
 					<SwiperSlide className="text-white py-40">
 						<img src={Hero} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="h-full max-w-7xl flex flex-col justify-between">
 							<div className="w-full py-8 flex flex-col justify-center gap-6 bg-gradient-to-r from-[#02030E] via-[#02030E] via-[65%] to-[#02030E]/0">
 								<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">National IoT Infrastructures</h1>
@@ -159,6 +160,7 @@ export default function Grupp4() {
 					{/* Agenda */}
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<h3 className="px-16 text-5xl font-semibold">Agenda</h3>
 						<div className="max-w-[1800px] place-items-center px-16 grid grid-cols-6 items-center w-full h-full">
 							{agendaItems.map((item, index) => {
@@ -207,6 +209,7 @@ export default function Grupp4() {
 					{/* Agenda point */}
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda1} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="h-full flex flex-col gap-16 items-center justify-center text-center">
 							<div className="relative bg-[#79DBF7] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold text-[#061C39]">1</span>
@@ -217,6 +220,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Purpose & Research Question</h1>
 						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
@@ -224,7 +228,7 @@ export default function Grupp4() {
 								onClick={() => toggleActive(1)}
 								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 1 ? "opacity-50" : "opacity-100"}`}
 							>
-								<div className="relative bg-[#094979] w-24 h-24 rounded-full flex items-center justify-center">
+								<div className={`relative w-24 h-24 rounded-full flex items-center justify-center ${activeId !== 1 ? "opacity-50 bg-[#094979]" : "opacity-100 bg-[#FFB494]"}`}>
 									<img src={Context} alt="" />
 								</div>
 								<div className="relative w-max flex flex-col items-start">
@@ -236,7 +240,7 @@ export default function Grupp4() {
 								onClick={() => toggleActive(2)}
 								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 2 ? "opacity-50" : "opacity-100"}`}
 							>
-								<div className="relative bg-[#094979] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+								<div className={`relative w-24 h-24 rounded-full flex items-center justify-center ${activeId !== 2 ? "opacity-50 bg-[#094979]" : "opacity-100 bg-[#FFB494]"}`}>
 									<img src={Exclamation} alt="" />
 								</div>
 								<div className="relative w-max flex flex-col items-start">
@@ -248,7 +252,7 @@ export default function Grupp4() {
 								onClick={() => toggleActive(3)}
 								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 3 ? "opacity-50" : "opacity-100"}`}
 							>
-								<div className="relative bg-[#094979] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+								<div className={`relative w-24 h-24 rounded-full flex items-center justify-center ${activeId !== 3 ? "opacity-50 bg-[#094979]" : "opacity-100 bg-[#FFB494]"}`}>
 									<img src={Border} alt="" />
 								</div>
 								<div className="relative w-max flex flex-col items-start">
@@ -261,6 +265,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={Nasa} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">The Bigger Picture</h1>
 						<h2 className="px-16 leading-snug text-3xl w-4/5">IoT is Increasingly Part of National Infrastructures</h2>
@@ -271,6 +276,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">The problems</h1>
 						<div className="px-16 h-full max-w-[1920px] grid grid-cols-2">
@@ -287,14 +293,15 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Why it matters</h1>
 						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
 							<div
 								onClick={() => toggleActive(4)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 4 ? "opacity-50" : "opacity-100"}`}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 4 ? "opacity-50" : "opacity-100"}`}
 							>
-								<div className="relative bg-[#094979] w-24 h-24 rounded-full flex items-center justify-center">
+								<div className={`relative w-24 h-24 rounded-full flex items-center justify-center ${activeId !== 4 ? "opacity-50 bg-[#094979]" : "opacity-100 bg-[#FFB494]"}`}>
 									<img className="max-w-14" src={Decision} alt="" />
 								</div>
 								<div className="relative flex flex-col items-start">
@@ -304,9 +311,9 @@ export default function Grupp4() {
 							</div>
 							<div
 								onClick={() => toggleActive(5)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 5 ? "opacity-50" : "opacity-100"}`}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 5 ? "opacity-50" : "opacity-100"}`}
 							>
-								<div className="relative bg-[#094979] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+								<div className={`relative w-24 h-24 rounded-full flex items-center justify-center ${activeId !== 5 ? "opacity-50 bg-[#094979]" : "opacity-100 bg-[#FFB494]"}`}>
 									<img className="max-w-14" src={Heart} alt="" />
 								</div>
 								<div className="relative flex flex-col items-start">
@@ -316,9 +323,9 @@ export default function Grupp4() {
 							</div>
 							<div
 								onClick={() => toggleActive(6)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 6 ? "opacity-50" : "opacity-100"}`}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 6 ? "opacity-50" : "opacity-100"}`}
 							>
-								<div className="relative bg-[#094979] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
+								<div className={`relative w-24 h-24 rounded-full flex items-center justify-center ${activeId !== 6 ? "opacity-50 bg-[#094979]" : "opacity-100 bg-[#FFB494]"}`}>
 									<img className="max-w-14" src={Thumb} alt="" />
 								</div>
 								<div className="relative flex flex-col items-start">
@@ -331,6 +338,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Barriers</h1>
 						<div className="px-16 h-full max-w-[1920px] grid grid-cols-2">
@@ -363,6 +371,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="px-16  max-w-[1920px] mx-auto">
 							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
@@ -373,6 +382,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="px-16  max-w-[1920px] mx-auto">
 							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
@@ -383,23 +393,25 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="px-16  max-w-[1920px] mx-auto">
 							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
 							<span className="text-2xl font-medium">Research Design</span>
-							<ul className="pt-4 space-y-4">
-								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Philisophy<span className="text-xl font-semibold block">Interpretivist</span></li>
-								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Theoretical Approach<span className="text-xl font-semibold block">Abductive</span></li>
-								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Methodological Choice<span className="text-xl font-semibold block">Qualitative</span></li>
-								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Strategy<span className="text-xl font-semibold block">Case Study</span></li>
-								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Time Horizon<span className="text-xl font-semibold block">Cross-Sectional</span></li>
-								<li className="bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">Techniques & Procedures<span className="text-xl font-semibold block">Thematic & Semi-Systematic</span></li>
+							<ul className="pt-4 grid grid-cols-3 gap-10">
+								<li className="bg-[#79DBF7] text-[#061C39] px-6 py-8 rounded-lg text-lg">Philosophy<span className="text-xl font-semibold block">Interpretivist</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] px-6 py-8 rounded-lg text-lg">Theoretical Approach<span className="text-xl font-semibold block">Abductive</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] px-6 py-8 rounded-lg text-lg">Methodological Choice<span className="text-xl font-semibold block">Qualitative</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] px-6 py-8 rounded-lg text-lg">Strategy<span className="text-xl font-semibold block">Case Study</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] px-6 py-8 rounded-lg text-lg">Time Horizon<span className="text-xl font-semibold block">Cross-Sectional</span></li>
+								<li className="bg-[#79DBF7] text-[#061C39] px-6 py-8 rounded-lg text-lg">Techniques & Procedures<span className="text-xl font-semibold block">Thematic & Semi-Systematic</span></li>
 							</ul>
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="px-16 max-w-[1920px] mx-auto">
 							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">The Framework Method</h1>
@@ -419,6 +431,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Propositions for Scalable IoT Data-sharing</h1>
 						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
@@ -463,6 +476,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Governance & Standardization</h1>
 						<span className="px-16 text-2xl font-medium">Establish Coherent Governance & Standardization Mechanisms</span>
@@ -520,6 +534,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Trust by Secure & Transparent Practices</h1>
 						<span className="px-16 text-2xl font-medium">Build Trust through Secure & Transparent Data-sharing Practices</span>
@@ -576,6 +591,7 @@ export default function Grupp4() {
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
 						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Continuous Learning through Collaboration</h1>
 						<span className="px-16 text-2xl font-medium">Enable Continuous Learning through Collaborative Testbeds & Federated Systems</span>
@@ -631,6 +647,7 @@ export default function Grupp4() {
 					</SwiperSlide>
 					<SwiperSlide className="text-white py-40">
 						<img src={ClosingBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="absolute inset-0 bg-[#4E4F71] opacity-30 w-full h-full -z-10" />
 						<div className="h-full max-w-7xl flex flex-col justify-between">
 							<div className="w-full mx-auto py-8 flex flex-col justify-center items-center h-full bg-gradient-to-r from-[#02030E] via-[#02030E] via-[65%] to-[#02030E]/0">
 								<h2 className="px-16 font-medium leading-snug text-6xl">Thanks!</h2>
