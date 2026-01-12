@@ -107,7 +107,7 @@ export default function Grupp1() {
 						<img src={Hero} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full max-w-7xl flex flex-col justify-between">
 							<div className="w-full py-8 flex items-center bg-gradient-to-r from-[#125375] via-[#125375] via-[65%] to-[#125375]/0">
-								<h2 className="px-16 font-medium leading-snug text-6xl w-4/5">Evaluating IoT Water-Efficiency Pilots in Sweden</h2>
+								<h2 className="px-16 font-medium leading-snug text-4xl lg:text-5xl w-4/5">Evaluating IoT Water-Efficiency Pilots in Sweden</h2>
 							</div>
 							<div className="px-16">
 								<h6 className="pb-8 text-xl">In collaboration with</h6>
@@ -127,14 +127,14 @@ export default function Grupp1() {
 						<div className="absolute inset-0 w-full h-full bg-[#031326] -z-10" />
 						<div className="relative w-full h-full flex flex-col justify-between items-center pt-32">
 							<img src={Map} alt="Background image" className="absolute inset-0 w-full h-full p-16 -z-10" />
-							<h1 className="text-[180px] font-bold">0.5<span className="text-[#007BC7]">%</span></h1>
+							<h1 className="text-[150px] font-bold">0.5<span className="text-[#007BC7]">%</span></h1>
 							<p className="text-4xl">Of all water on earth is accessible, freshwater…</p>
 						</div>
 					</SwiperSlide>
 					{/* Team */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
-						<h3 className="px-16 text-5xl font-semibold">Our Team</h3>
+						<h3 className="px-16 text-4xl font-semibold">Our Team</h3>
 						<div className="max-w-[1800px] px-16 pt-16 grid grid-cols-4">
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
 								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
@@ -185,7 +185,7 @@ export default function Grupp1() {
 					{/* Agenda */}
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
-						<h3 className="px-16 text-5xl font-semibold">Agenda</h3>
+						<h3 className="px-16 text-4xl font-semibold">Agenda</h3>
 						<div className="max-w-[1800px] place-items-center px-16 grid grid-cols-5 items-center w-full h-full">
 							{agendaItems.map((item, index) => {
 								const isTop = index % 2 === 0;
@@ -237,48 +237,48 @@ export default function Grupp1() {
 							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">1</span>
 							</div>
-							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">Why This Matters</h1>
+							<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Why This Matters</h1>
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">The Importance Of Water</h1>
-						<div className="h-full max-w-[1800px] grid grid-cols-3">
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">The Importance Of Water</h1>
+						<div className="h-full max-w-[1800px] px-16 grid grid-cols-3">
 							<div
 								onClick={() => toggleActive(1)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 1 ? "opacity-30" : "opacity-100"}`}
+								className={`flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 1 ? "opacity-50" : "opacity-100"}`}
 							>
 								<div className="relative bg-[#125375] w-24 h-24 rounded-full flex items-center justify-center">
 									<img src={Exclamation} alt="" />
 								</div>
 								<div className="relative w-full text-center">
-									<h4 className="text-3xl font-medium">Uncertainties</h4>
+									<h4 className="text-2xl font-medium">Uncertainties</h4>
 									{activeId === 1 && <p className="absolute pt-3 text-lg">Geopolitical tensions increase uncertainty for IoT water projects. Water systems are now treated as critical national infrastructure, requiring stronger security and resilience.</p>}
 								</div>
 							</div>
 							<div
 								onClick={() => toggleActive(2)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 2 ? "opacity-30" : "opacity-100"}`}
+								className={`flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 2 ? "opacity-50" : "opacity-100"}`}
 							>
 								<div className="relative bg-[#125375] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
 									<img src={Climate} alt="" />
 								</div>
 								<div className="relative w-full text-center">
-									<h4 className="text-3xl font-medium">Climate change</h4>
+									<h4 className="text-2xl font-medium">Climate change</h4>
 									{activeId === 2 && <p className="absolute pt-3 text-lg">Climate change increases uncertainty through more frequent droughts, floods, and strain on aging water infrastructure, making continuous monitoring essential.</p>}
 								</div>
 							</div>
 							<div
 								onClick={() => toggleActive(3)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 3 ? "opacity-30" : "opacity-100"}`}
+								className={`flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 3 ? "opacity-50" : "opacity-100"}`}
 							>
 								<div className="relative bg-[#125375] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
 									<img src={Hourglass} alt="" />
 								</div>
 								<div className="relative w-full text-center">
-									<h4 className="text-3xl font-medium">A finite resource</h4>
+									<h4 className="text-2xl font-medium">A finite resource</h4>
 									{activeId === 3 && <p className="absolute pt-3 text-lg">Water is a finite resource, and increasing pressure from climate, population, and aging infrastructure creates uncertainty around long-term availability.</p>}
 								</div>
 							</div>
@@ -288,11 +288,11 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Problem Formulation</h1>
-						<span className="px-16 text-2xl font-medium">The Landscape of Water IoT Implementation in Sweden</span>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Problem Formulation</h1>
+						<span className="px-16 text-xl font-medium">The Landscape of Water IoT Implementation in Sweden</span>
 						<div className="w-full h-full grid items-center place-content-center">
-							<div className="bg-[#007BC7] w-[600px] h-[300px] rounded-[50%] mx-16 flex items-center justify-center px-12 py-6">
-								<p className="max-w-96 text-center text-4xl font-medium">The context of Sweden's decentralized governance structure</p>
+							<div className="bg-[#007BC7] w-[550px] h-[250px] rounded-[50%] mx-16 flex items-center justify-center px-12 py-6">
+								<p className="max-w-96 text-center text-3xl font-medium">The context of Sweden's decentralized governance structure</p>
 							</div>
 						</div>
 					</SwiperSlide>
@@ -303,54 +303,54 @@ export default function Grupp1() {
 							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">2</span>
 							</div>
-							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">What Did We Look At?</h1>
+							<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">What Did We Look At?</h1>
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">What did we look at?</h1>
-						<div className="h-full max-w-[1800px] grid grid-cols-3">
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">What did we look at?</h1>
+						<div className="px-16 h-full max-w-[1800px] grid grid-cols-3">
 							<div
 								onClick={() => toggleActive(4)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 4 ? "opacity-30" : "opacity-100"}`}
+								className={`flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 4 ? "opacity-50" : "opacity-100"}`}
 							>
 								<div className="relative bg-[#125375] w-24 h-24 rounded-full flex items-center justify-center">
 									<img src={Files} alt="" />
 								</div>
 								<div className="relative w-full text-center">
-									<h4 className="text-3xl font-medium">Our Contribution</h4>
+									<h4 className="text-2xl font-medium">Our Contribution</h4>
 									{activeId === 4 && (
-										<ul className="absolute pt-3 text-lg list-disc">
-											<li>Cross-case study of real IoT water-efficiency pilots in Swedish municipalities</li>
-											<li>Focus on organizational and managerial enablers and barriers</li>
-											<li>Insights that can support a future standardized national model</li>
+										<ul className="absolute pt-3 text-lg">
+											<li>• Cross-case study of real IoT water-efficiency pilots in Swedish municipalities</li>
+											<li>• Focus on organizational and managerial enablers and barriers</li>
+											<li>• Insights that can support a future standardized national model</li>
 										</ul>
 									)}
 								</div>
 							</div>
 							<div
 								onClick={() => toggleActive(5)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 5 ? "opacity-30" : "opacity-100"}`}
+								className={`flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 5 ? "opacity-50" : "opacity-100"}`}
 							>
 								<div className="relative bg-[#125375] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
 									<img src={Purpose} alt="" />
 								</div>
 								<div className="relative w-full text-center">
-									<h4 className="text-3xl font-medium">Purpose Of This Study</h4>
+									<h4 className="text-2xl font-medium">Purpose Of This Study</h4>
 									{activeId === 5 && <p className="absolute pt-3 text-lg">We want to look at how IoT is actually used in real water projects in Swedish municipalities. To find clear patterns and lessons that can help create a more standard, national way of working in Sweden.</p>}
 								</div>
 							</div>
 							<div
 								onClick={() => toggleActive(6)}
-								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== null && activeId !== 6 ? "opacity-30" : "opacity-100"}`}
+								className={`flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 6 ? "opacity-50" : "opacity-100"}`}
 							>
 								<div className="relative bg-[#125375] w-24 h-24 rounded-full cursor-pointer flex items-center justify-center">
 									<img src={Notes} alt="" />
 								</div>
 								<div className="relative w-full text-center">
-									<h4 className="text-3xl font-medium">Research Questions</h4>
+									<h4 className="text-2xl font-medium">Research Questions</h4>
 									{activeId === 6 && (
 										<ul className="absolute pt-3 text-lg list-decimal">
 											<li>How are IoT solutions for water-efficiency currently used and managed in Sweden?</li>
@@ -368,14 +368,14 @@ export default function Grupp1() {
 							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">3</span>
 							</div>
-							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">What Have We Done?</h1>
+							<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">What Have We Done?</h1>
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Conducted 20 interviews</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Conducted 20 interviews</h1>
 						<div className="px-16 pt-8 max-w-[1800px] flex items-center gap-16 justify-center">
 							<svg width="400" height="400" viewBox="0 0 200 200">
 								{/* Segment 1 — 20% (0° → 72°) */}
@@ -436,8 +436,8 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Founded <span className="text-[#007BC7]">5</span> Perspectives</h1>
-						<div className="h-full max-w-[1800px] w-full flex items-center justify-center">
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Founded <span className="text-[#007BC7]">5</span> Perspectives</h1>
+						<div className="px-16 pt-16 h-full max-w-[1800px] w-full flex items-center justify-center">
 							<svg viewBox="-63 -50 420 420" width="650">
 								<polygon
 									points="150,30 185,110 270,110 200,165 230,245 150,195 70,245 100,165 30,110 115,110"
@@ -476,21 +476,21 @@ export default function Grupp1() {
 							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">4</span>
 							</div>
-							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">What Have We Found?</h1>
+							<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">What Have We Found?</h1>
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Overview</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Overview</h1>
 						<span className="px-16 text-2xl font-medium">Previous and current projects</span>
-						<div onClick={() => toggleActive(7)} className="relative h-full max-w-[1800px] w-full flex flex-col items-center justify-center">
+						<div onClick={() => toggleActive(7)} className="pt-12 relative w-full flex flex-col items-center justify-center cursor-pointer">
 							<p>Practices in past and current IoT work and water projects</p>
-							<img className="max-w-3xl pt-10" src={Graph1} alt="" />
+							<img className="max-w-2xl pt-10" src={Graph1} alt="" />
 							{activeId === 7 && (
-								<div className="absolute left-[80%] bg-[#007BC7] w-48 h-48 rounded-full flex items-center justify-center">
-									<p className="text-5xl font-semibold flex flex-col justify-center items-center">197 <span className="text-lg font-normal">data points</span></p>
+								<div className="absolute left-[80%] bg-[#007BC7] md:w-32 md:h-32 lg:w-48 lg:h-48 rounded-full flex items-center justify-center">
+									<p className="text-4xl lg:text-5xl font-semibold flex flex-col justify-center items-center">197 <span className="text-lg font-normal">data points</span></p>
 								</div>
 							)}
 						</div>
@@ -499,13 +499,13 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Overview</h1>
-						<span className="px-16 text-2xl font-medium">Enablers and Barriers</span>
-						<div onClick={() => toggleActive(8)} className="relative h-full max-w-[1800px] w-full flex items-center justify-center">
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Overview</h1>
+						<span className="px-16 text-xl font-medium">Enablers and Barriers</span>
+						<div onClick={() => toggleActive(8)} className="relative h-full max-w-[1800px] w-full flex items-center justify-center cursor-pointer">
 							<img className="max-w-3xl pt-10" src={Graph2} alt="" />
 							{activeId === 8 && (
-								<div className="absolute left-[80%] bg-[#007BC7] w-48 h-48 rounded-full flex items-center justify-center">
-									<p className="text-5xl font-semibold flex flex-col justify-center items-center">735 <span className="text-lg font-normal">data points</span></p>
+								<div className="absolute left-[80%] top-6 bg-[#007BC7] md:w-32 md:h-32 lg:w-48 lg:h-48 rounded-full flex items-center justify-center">
+									<p className="text-4xl lg:text-5xl font-semibold flex flex-col justify-center items-center">735 <span className="text-lg font-normal">data points</span></p>
 								</div>
 							)}
 						</div>
@@ -514,16 +514,16 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">1. Clear operational needs drive adoption</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">1. Clear operational needs drive adoption</h1>
 						<div className="px-16 h-full max-w-[1800px] grid grid-cols-2 place-items-center text-center">
-							<div onClick={() => toggleActive(9)} className={`py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 9 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(9)} className={`cursor-pointer py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 9 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Idea} alt="" />
 								<h6 className="text-2xl font-medium">Why is this the case?</h6>
 								{activeId === 9 &&
 									<p className="text-lg">Municipalities start IoT projects primarily when facing concrete operational problems, leaks, flooding, groundwater uncertainty, or inefficient manual routines. Digitalization is not a strategic priority in itself, so projects emerge reactively rather than proactively.</p>
 								}
 							</div>
-							<div onClick={() => toggleActive(10)} className={`py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 10 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(10)} className={`cursor-pointer py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 10 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Screen} alt="" />
 								<h6 className="text-2xl font-medium">How can this be resolved?</h6>
 								{activeId === 10 && (
@@ -536,16 +536,16 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">2. Enthusiasts start projects, but leadership determines scalability</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">2. Enthusiasts start projects, but leadership determines scalability</h1>
 						<div className="px-16 h-full max-w-[1800px] grid grid-cols-2 place-items-center text-center">
-							<div onClick={() => toggleActive(11)} className={`py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 11 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(11)} className={`cursor-pointer py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 11 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Leaders} alt="" />
 								<h6 className="text-2xl font-medium">Why is this the case?</h6>
 								{activeId === 11 &&
 									<p className="text-lg">Early IoT initiatives often rely on motivated individuals who push pilots forward. But without managerial commitment, stable funding, or cross-department responsibility, these projects cannot survive organizational change.</p>
 								}
 							</div>
-							<div onClick={() => toggleActive(12)} className={`py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 12 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(12)} className={`cursor-pointer py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 12 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Stationery} alt="" />
 								<h6 className="text-2xl font-medium">How can this be resolved?</h6>
 								{activeId === 12 && (
@@ -558,16 +558,16 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">3. Technical maturity is not the main barrier, interoperability is…</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">3. Technical maturity is not the main barrier, interoperability is…</h1>
 						<div className="px-16 h-full max-w-[1800px] grid grid-cols-2 place-items-center text-center">
-							<div onClick={() => toggleActive(13)} className={`py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 13 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(13)} className={`cursor-pointer py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 13 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Platform} alt="" />
 								<h6 className="text-2xl font-medium">Why is this the case?</h6>
 								{activeId === 13 &&
 									<p className="text-lg"> Sensors and networks are readily available, but municipalities use different platforms, vendors, and data formats. This creates isolated systems and increases the risk of vendor lock-in, making it difficult to share knowledge or replicate successful solutions.</p>
 								}
 							</div>
-							<div onClick={() => toggleActive(14)} className={`py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 14 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(14)} className={`pcursor-pointer y-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 14 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Data} alt="" />
 								<h6 className="text-2xl font-medium">How can this be resolved?</h6>
 								{activeId === 14 && (
@@ -580,16 +580,16 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">4. Decentralized structure highlights that small Municipalities Cannot Scale Alone</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">4. Decentralized structure highlights that small Municipalities Cannot Scale Alone</h1>
 						<div className="px-16 h-full max-w-[1800px] grid grid-cols-2 place-items-center text-center">
-							<div onClick={() => toggleActive(15)} className={`py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 15 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(15)} className={`cursor-pointer py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 15 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={ItPeople} alt="" />
 								<h6 className="text-2xl font-medium">Why is this the case?</h6>
 								{activeId === 15 &&
 									<p className="text-lg">Smaller municipalities lack the technical capacity, IT competence, and financial resources needed to scale IoT solutions. Limited staff and tight budgets make it difficult to maintain sensor networks or invest in long-term digital infrastructure, leading to uneven digital maturity and higher dependency on vendors.</p>
 								}
 							</div>
-							<div onClick={() => toggleActive(16)} className={`py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 16 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(16)} className={`cursor-pointer py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 16 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Structure} alt="" />
 								<h6 className="text-2xl font-medium">How can this be resolved?</h6>
 								{activeId === 16 && (
@@ -602,16 +602,16 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={SimpleDots} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">5. Knowledge Sharing Is important but Unstructured</h1>
+						<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">5. Knowledge Sharing Is important but Unstructured</h1>
 						<div className="px-16 h-full max-w-[1800px] grid grid-cols-2 place-items-center text-center">
-							<div onClick={() => toggleActive(17)} className={`py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 17 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(17)} className={`cursor-pointer py-8 px-16 bg-[#125375] rounded-xl flex flex-col justify-center items-center gap-4 ${activeId !== 17 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Search} alt="" />
 								<h6 className="text-2xl font-medium">Why is this the case?</h6>
 								{activeId === 17 &&
 									<p className="text-lg">Knowledge sharing depends on informal networks and individual relationships. There is no standardized platform, no structured documentation, and no routines for transferring lessons from one municipality to another.</p>
 								}
 							</div>
-							<div onClick={() => toggleActive(18)} className={`py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 18 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
+							<div onClick={() => toggleActive(18)} className={`cursor-pointer py-8 px-16 bg-[#042D5D] rounded-xl flex flex-col justify-center items-center ${activeId !== 18 ? "w-3/4 h-1/2 gap-8" : "w-full py-[10%] gap-4"}`}>
 								<img className="h-14" src={Together} alt="" />
 								<h6 className="text-2xl font-medium">How can this be resolved?</h6>
 								{activeId === 18 && (
@@ -627,7 +627,7 @@ export default function Grupp1() {
 							<div className="relative bg-[#094852] w-24 h-24 rounded-full flex items-center justify-center">
 								<span className="text-4xl font-bold">5</span>
 							</div>
-							<h1 className="px-16 font-medium leading-snug text-6xl w-4/5">Summary</h1>
+							<h1 className="px-16 font-medium leading-snug text-4xl w-4/5">Summary</h1>
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
@@ -636,20 +636,20 @@ export default function Grupp1() {
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
 						<div className="px-16 py-8 max-w-[1800px] grid grid-cols-3 place-items-center">
 							<div onClick={() => toggleActive(19)} className={`cursor-pointer ${activeId !== 19 ? "h-full" : "border-b pb-6 px-16"}`}>
-								<p>Current Landscape</p>
+								<p className="text-lg font-semibold">Current Landscape</p>
 							</div>
 							<div onClick={() => toggleActive(20)} className={`cursor-pointer ${activeId !== 20 ? "h-full" : "border-b pb-6 px-16"}`}>
-								<p>What we see</p>
+								<p className="text-lg font-semibold">What we see</p>
 							</div>
 							<div onClick={() => toggleActive(21)} className={`cursor-pointer ${activeId !== 21 ? "h-full" : "border-b pb-6 px-16"}`}>
-								<p>Recommendations</p>
+								<p className="text-lg font-semibold">Recommendations</p>
 							</div>
 						</div>
 						{activeId === 19 && (
-							<div className="px-16 pt-8 max-w-[1800px] h-full flex justify-center gap-24">
-								<img className="rounded-xl object-cover max-w-2xl max-h-96" src={Landscape} alt="" />
+							<div className="px-16 grid grid-cols-2 place-items-center h-full gap-6">
+								<img className="rounded-xl object-cover max-w-full" src={Landscape} alt="" />
 								<ul className="list-disc">
-									<h5 className="text-4xl font-medium pb-4">Current Landscape</h5>
+									<h5 className="text-3xl font-medium pb-4">Current Landscape</h5>
 									<li>Sweden shows strong innovation but weak coordination.</li>
 									<li>Pilots succeed locally but rarely scale nationally.</li>
 									<li>Small municipalities need more support to participate.</li>
@@ -659,10 +659,10 @@ export default function Grupp1() {
 							</div>
 						)}
 						{activeId === 20 && (
-							<div className="px-16 pt-8 max-w-[1800px] h-full flex justify-center gap-24">
-								<img className="rounded-xl object-cover max-w-2xl max-h-96" src={LookingGlass} alt="" />
+							<div className="px-16 grid grid-cols-2 place-items-center h-full gap-6">
+								<img className="rounded-xl object-cover max-w-full" src={LookingGlass} alt="" />
 								<ul className="list-disc">
-									<h5 className="text-4xl font-medium pb-4">What we see</h5>
+									<h5 className="text-3xl font-medium pb-4">What we see</h5>
 									<li>IoT adoption is driven by operational needs.</li>
 									<li>Decentralized governance creates fragmentation.</li>
 									<li>Interoperability, not technology, is a strong barrier.</li>
@@ -672,10 +672,10 @@ export default function Grupp1() {
 							</div>
 						)}
 						{activeId === 21 && (
-							<div className="px-16 pt-8 max-w-[1800px] h-full flex justify-center gap-24">
-								<img className="rounded-xl object-cover max-w-2xl max-h-96" src={Reccomendations} alt="" />
+							<div className="px-16 grid grid-cols-2 place-items-center h-full gap-6">
+								<img className="rounded-xl object-cover max-w-full" src={Reccomendations} alt="" />
 								<ul className="list-disc">
-									<h5 className="text-4xl font-medium pb-4">Recommendations</h5>
+									<h5 className="text-3xl font-medium pb-4">Recommendations</h5>
 									<li>Develop shared standards, data models, and open APIs.</li>
 									<li>Build regional support and provide procurement models.</li>
 									<li>Create structured platforms for knowledge sharing.</li>
@@ -689,8 +689,8 @@ export default function Grupp1() {
 					<SwiperSlide className="text-white py-40">
 						<img src={Agenda} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<span className="px-16 text-sm font-medium text-white/60">Evaluating IoT Water-Efficiency Pilots in Sweden</span>
-						<div className="px-16 flex justify-between items-center max-w-[1800px]">
-							<div className="px-16 flex flex-col gap-8 pt-8">
+						<div className="px-16 grid grid-cols-2 items-center">
+							<div className="px-16 flex flex-col gap-8 pt-4">
 								{summaryItems.map((item, index) => {
 									const isOpen = toggleAgenda.includes(item.id)
 									const isLast = index === summaryItems.length - 1
@@ -728,15 +728,15 @@ export default function Grupp1() {
 									)
 								})}
 							</div>
-							<img className="max-w-xl" src={Team} alt="" />
+							<img className="max-w-full rounded-xl" src={Team} alt="" />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide className="text-white py-40">
 						<img src={Hero} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
 						<div className="h-full max-w-7xl flex flex-col justify-between">
 							<div className="w-full mx-auto py-8 flex flex-col justify-center items-center h-full bg-gradient-to-r from-[#125375] via-[#125375] via-[65%] to-[#125375]/0">
-								<h2 className="px-16 font-medium leading-snug text-6xl">Thanks!</h2>
-								<p className="px-16 text-4xl flex gap-4 pt-4"> <img src={Questions} alt="" />Do you have any questions?</p>
+								<h2 className="px-16 font-medium leading-snug text-5xl">Thanks!</h2>
+								<p className="px-16 text-3xl flex gap-4 pt-4"> <img src={Questions} alt="" />Do you have any questions?</p>
 							</div>
 						</div>
 					</SwiperSlide>

@@ -20,10 +20,10 @@ const DashboardCard = ({
         backgroundRepeat: "no-repeat",
       }}
       className="
-        min-h-96 max-h-full cursor-pointer rounded-xl flex flex-col justify-between py-10 px-14 transition-transform duration-200 hover:scale-105 hover:shadow-xl"
+        max-h-full min-h-72 cursor-pointer rounded-xl flex flex-col justify-between py-10 px-8 xl:px-16 transition-transform duration-200 hover:scale-105 hover:shadow-xl"
     >
       <div>
-        <h2 className="text-3xl font-bold mb-3">
+        <h2 className="text-2xl font-semibold mb-3">
           {title}
         </h2>
         <p className="mb-4">
