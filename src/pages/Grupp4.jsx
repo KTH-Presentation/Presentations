@@ -7,6 +7,7 @@ import Hero from "../assets/grupp4/1.png";
 import Agenda from "../assets/grupp4/2.png";
 import Agenda1 from "../assets/grupp4/7.png";
 import SlideBg from "../assets/grupp4/4.png";
+import ClosingBg from "../assets/grupp4/9.png";
 import Nasa from "../assets/grupp4/nasa.png";
 import Geel from "../assets/grupp4/Geel.png";
 import Participants from "../assets/grupp4/participants.png";
@@ -21,9 +22,11 @@ import Decision from "../assets/grupp4/icons/decision.svg";
 import Heart from "../assets/grupp4/icons/heart.svg";
 import Thumb from "../assets/grupp4/icons/thumb.svg";
 import Question from "../assets/grupp4/icons/question-mark.svg";
+import Result from "../assets/grupp4/icons/result.svg";
 import Context from "../assets/grupp2/icons/context.svg";
 import Complex from "../assets/grupp2/icons/complex.svg";
 import Gap from "../assets/grupp2/icons/gap.svg";
+import Questions from "../assets/grupp1/icons/questions.svg";
 import { SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import ExpandableCircle from "../components/ExpandableCircle";
@@ -454,6 +457,184 @@ export default function Grupp4() {
 									<h4 className="text-3xl font-medium">Enable</h4>
 									{activeId === 9 && <p className="absolute min-w-80 top-full pt-3 text-lg">Continuous Learning through Collaborative Testbeds & Federated Systems</p>}
 								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
+						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Governance & Standardization</h1>
+						<span className="px-16 text-2xl font-medium">Establish Coherent Governance & Standardization Mechanisms</span>
+						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
+							<div
+								onClick={() => toggleActive(10)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 10 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">What?</h4>
+									{activeId === 10 && <p className="text-lg">A coordinated national governance and standardization framework must be established to ensure interoperability and compliance across municipalities</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(11)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 11 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">Why?</h4>
+									{activeId === 11 && <p className="text-lg">Fragmented responsibilities and inconsistent legal interpretations currently limit scalability and create barriers to collaboration</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(12)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 12 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">How?</h4>
+									{activeId === 12 && (
+										<ul className="text-lg list-disc">
+											<li>Facilitate working groups for governance models (R1, R2)</li>
+											<li>Align national & international standards & legal frameworks for industry compliance (L1)</li>
+											<li>Strengthen strategic stance & interpretation between industry actors & policymakers (L3)</li>
+										</ul>
+									)}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(13)}
+								className={`col-span-2 px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 13 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="flex w-full items-center gap-6">
+									<img className="max-w-16" src={Result} alt="" />
+									{activeId === 13 && (
+										<div className="text-lg list-disc bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+											<h4 className="text-2xl font-medium">Expected result:</h4>
+											<p>Internetstiftelsen facilitates standard-setting and governance alignment between public and private stakeholders to create an interoperable foundation.</p>
+										</div>
+									)}
+								</div>
+							</div>
+
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
+						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Trust by Secure & Transparent Practices</h1>
+						<span className="px-16 text-2xl font-medium">Build Trust through Secure & Transparent Data-sharing Practices</span>
+						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
+							<div
+								onClick={() => toggleActive(10)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 10 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">What?</h4>
+									{activeId === 10 && <p className="text-lg">Reliability and scalability depend on trust and perceived security among actors (technical and institutional).</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(11)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 11 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">Why?</h4>
+									{activeId === 11 && <p className="text-lg">Without credible mechanisms for data protection, transparency and accountability, stakeholders remain hesitant to share information across organizational boundaries</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(12)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 12 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">How?</h4>
+									{activeId === 12 && (
+										<ul className="text-lg list-disc">
+											<li>Use certification schemes/trust marks of data compliance (R4)</li>
+											<li>Clarify structures of data ownership, access rights, and accountability (L2)</li>
+											<li>Provide operational guidelines for interoperability & standard procedures (R2)</li>
+										</ul>
+									)}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(13)}
+								className={`col-span-2 px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 13 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="flex w-full items-center gap-6">
+									<img className="max-w-16" src={Result} alt="" />
+									{activeId === 13 && (
+										<div className="text-lg list-disc bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+											<h4 className="text-2xl font-medium">Expected result:</h4>
+											<p>Internetstiftelsen strengthens their position as a neutral trust enabler, developing certification schemes and secure interoperability frameworks that strengthen confidence in data exchange.</p>
+										</div>
+									)}
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					{/* Content Slide */}
+					<SwiperSlide className="text-white py-40">
+						<img src={SlideBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<span className="px-16 text-sm font-medium text-white/60">National IoT Infrastructures</span>
+						<h1 className="px-16 font-medium leading-snug text-5xl w-4/5">Continuous Learning through Collaboration</h1>
+						<span className="px-16 text-2xl font-medium">Enable Continuous Learning through Collaborative Testbeds & Federated Systems</span>
+						<div className="px-16 h-full max-w-[1920px] grid grid-cols-3">
+							<div
+								onClick={() => toggleActive(10)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 10 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">What?</h4>
+									{activeId === 10 && <p className="text-lg">A sustainable IoT infrastructure requires continuous organizational learning and experimentation across sectors.</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(11)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 11 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">Why?</h4>
+									{activeId === 11 && <p className="text-lg">Without structured testbeds and pilot environments, actors cannot validate interoperability, adapt governance models, or ensure long-term system resilience.</p>}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(12)}
+								className={`px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 12 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+									<h4 className="text-2xl font-medium">How?</h4>
+									{activeId === 12 && (
+										<ul className="text-lg list-disc">
+											<li>Lead multi-actor pilots, testing data-sharing solution under real-world conditions (N1)</li>
+											<li>Facilitate federated testbeds, allowing interoperability & collaboration (N2, N4)</li>
+											<li>Establish channels for sharing learnings from pilot initiatives (N3)</li>
+										</ul>
+									)}
+								</div>
+							</div>
+							<div
+								onClick={() => toggleActive(13)}
+								className={`col-span-2 px-16 flex flex-col items-center justify-center gap-8 cursor-pointer transition-opacity duration-300 ${activeId !== 13 ? "opacity-80" : "opacity-100"}`}
+							>
+								<div className="flex w-full items-center gap-6">
+									<img className="max-w-16" src={Result} alt="" />
+									{activeId === 13 && (
+										<div className="text-lg list-disc bg-[#094979] w-full px-12 py-8 flex flex-col items-start justify-center gap-2 rounded-lg">
+											<h4 className="text-2xl font-medium">Expected result:</h4>
+											<p>Internetstiftelsen leads multi-actor pilot initiatives that connect research, policy, and practice, accelerating the evolution of scalable and reliable IoT systems.</p>
+										</div>
+									)}
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide className="text-white py-40">
+						<img src={ClosingBg} alt="Background image" className="absolute inset-0 w-full h-full object-cover -z-10" />
+						<div className="h-full max-w-7xl flex flex-col justify-between">
+							<div className="w-full mx-auto py-8 flex flex-col justify-center items-center h-full bg-gradient-to-r from-[#02030E] via-[#02030E] via-[65%] to-[#02030E]/0">
+								<h2 className="px-16 font-medium leading-snug text-6xl">Thanks!</h2>
+								<p className="px-16 text-4xl flex gap-4 pt-4"> <img src={Questions} alt="" />Do you have any questions?</p>
 							</div>
 						</div>
 					</SwiperSlide>
