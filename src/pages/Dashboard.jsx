@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import DashboardCard from "../components/DashboardCard.jsx";
 import Internetstiftelsen from "../assets/logos/Internetstiftelsen.svg";
 import Knowit from "../assets/logos/Knowit.svg";
 import ÖrebroBostäder from "../assets/logos/ÖrebroBostäder.svg";
+import Rymd from "../assets/logos/Rymd.svg";
+import Haninge from "../assets/logos/Haninge1.svg";
 import Grupp1 from "../assets/grupp1/1.png";
 import Grupp2 from "../assets/grupp2/1.png";
 import Grupp3 from "../assets/grupp3/1.png";
@@ -17,8 +18,8 @@ export default function Dashboard() {
       <Header />
 
       {/* Korten */}
-      <main className="max-w-[1920px] max-h-[1020px] h-screen mx-auto py-6 px-16 flex items-center justify-center">
-        <section className="">
+      <main className="max-w-[1920px] h-screen mx-auto py-6 md:px-8 xl:px-16">
+        <section>
           <div className="max-w-[1800px] mx-auto grid gap-5 sm:grid-cols-1 md:grid-cols-2 text-white">
             <DashboardCard
               title="Evaluating IoT Water-Efficiency Pilots in Sweden"
@@ -31,10 +32,11 @@ export default function Dashboard() {
             />
             <DashboardCard
               title="Sustainable Community Development"
-              leadingText="A Data-Driven Strategy for 2050"
+              leadingText="Exploring Smart City Development and Sustainable Living Towards 2050"
               logos={[
-                {src: Internetstiftelsen, alt: "Internetstiftelsen logo"},
-                {src: Knowit, alt: "Knowit logo"}
+                {src: Knowit, alt: "Knowit logo"},
+                {src: Haninge, alt: "Haninge logo"},
+                {src: Rymd, alt: "Rymdstyrelsen logo"},
               ]}
               background={Grupp2}
               navigateTo="/grupp2"
