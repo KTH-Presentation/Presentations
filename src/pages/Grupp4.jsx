@@ -11,6 +11,7 @@ import ClosingBg from "../assets/grupp4/9.png";
 import Nasa from "../assets/grupp4/nasa.png";
 import Geel from "../assets/grupp4/Geel.png";
 import Participants from "../assets/grupp4/participants.png";
+import Framework from "../assets/grupp4/framework.png";
 import Establish from "../assets/grupp4/establish.png";
 import Build from "../assets/grupp4/build.jpg";
 import Enable from "../assets/grupp4/enable.png";
@@ -23,6 +24,13 @@ import Heart from "../assets/grupp4/icons/heart.svg";
 import Thumb from "../assets/grupp4/icons/thumb.svg";
 import Question from "../assets/grupp4/icons/question-mark.svg";
 import Result from "../assets/grupp4/icons/result.svg";
+import Rebecka from "../assets/grupp4/profile/Rebecka.png";
+import Hrafnhildur from "../assets/grupp4/profile/Hrafnhildur.png";
+import Vide from "../assets/grupp4/profile/Vide.png";
+import Halldóra from "../assets/grupp4/profile/Halldóra.png";
+import Anna from "../assets/grupp4/profile/Anna.png";
+import Daniel from "../assets/grupp4/profile/Daniel.png";
+import Sebastian from "../assets/grupp4/profile/Sebastian.png";
 import Context from "../assets/grupp2/icons/context.svg";
 import Complex from "../assets/grupp2/icons/complex.svg";
 import Gap from "../assets/grupp2/icons/gap.svg";
@@ -111,49 +119,49 @@ export default function Grupp4() {
 						<div className="absolute inset-0 bg-[#061C39] w-full h-full object-cover -z-10" />
 						<h3 className="px-16 text-5xl font-semibold">Our Team</h3>
 						<div className="max-w-[1800px] px-16 pt-16 grid grid-cols-4">
-							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+							<div className="text-center flex flex-col items-center justify-center gap-6 w-42">
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Rebecka} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Rebecka Wallmark Dänbro</p>
+								<p className="text-2xl font-medium text-center">Rebecka Wallmark Dänbro</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Hrafnhildur} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Hrafnhildur Hekla Björnsdóttir</p>
+								<p className="text-2xl font-medium text-center">Hrafnhildur Hekla Björnsdóttir</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Vide} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Vide Rabo</p>
+								<p className="text-2xl font-medium text-center">Vide Rabo</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Halldóra} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Halldóra Gísladóttir</p>
+								<p className="text-2xl font-medium text-center">Halldóra Gísladóttir</p>
 							</div>
 						</div>
 						<div className="px-16 pt-16 w-3/4 mx-auto grid grid-cols-3 justify-items-center gap-16 ">
 							<div className=" flex flex-col items-center justify-center gap-6 ">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Anna} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Anna Maria Danielsdottir</p>
+								<p className="text-2xl font-medium text-center">Anna Maria Danielsdottir</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Daniel} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Daniel Rueda Garcia</p>
+								<p className="text-2xl font-medium text-center">Daniel Rueda Garcia</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#79DBF7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Sebastian} alt="" />
 								</figure>
-								<p className="text-2xl font-medium">Sebastian Torp</p>
+								<p className="text-2xl font-medium text-center">Sebastian Torp</p>
 							</div>
 						</div>
 					</SwiperSlide>
@@ -387,7 +395,7 @@ export default function Grupp4() {
 							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">Theory and Research Design</h1>
 							<span className="text-2xl font-medium">Interview Participants</span>
-							<img className="pt-[2%] max-w-3xl mx-auto" src={Participants} alt="" />
+							<img className="pt-[2%] max-w-[450px] mx-auto" src={Participants} alt="" />
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
@@ -416,7 +424,10 @@ export default function Grupp4() {
 							<span className="text-sm font-medium text-white/60">National IoT Infrastructures</span>
 							<h1 className="font-medium leading-snug text-5xl w-4/5">The Framework Method</h1>
 							<span className="text-2xl font-medium">Research Design</span>
-							<ul className="pt-4 grid grid-cols-3 gap-8 max-w-fit">
+							<figure className="pt-4 max-w-[1000px]">
+								<img src={Framework} alt="" />
+							</figure>
+							{/* <ul className="pt-4 grid grid-cols-3 gap-8 max-w-fit">
 								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">1. Interview transcripts</li>
 								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">2. Data Familiarization</li>
 								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">3. Data Coding</li>
@@ -425,7 +436,7 @@ export default function Grupp4() {
 								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">6. Data Charting</li>
 								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">7. Data Interpretation</li>
 								<li className="h-20 flex items-center bg-[#79DBF7] text-[#061C39] w-72 px-6 py-2 rounded-lg text-lg">8. Synthesizing findings into Discussion & Conclusion</li>
-							</ul>
+							</ul> */}
 						</div>
 					</SwiperSlide>
 					{/* Content Slide */}
