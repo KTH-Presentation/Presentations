@@ -13,6 +13,13 @@ import Agenda1 from "../assets/grupp2/8.png";
 import SlideBg from "../assets/grupp2/9.png";
 import Hand from "../assets/grupp2/hand.png";
 import ClosingBg from "../assets/grupp2/15.png";
+import Astrid from "../assets/grupp2/profile/Astrid.png";
+import Frida from "../assets/grupp2/profile/Frida.png";
+import Kim from "../assets/grupp2/profile/Kim.png";
+import Warisatil from "../assets/grupp2/profile/Warisatil.png";
+import Zaky from "../assets/grupp2/profile/Zaky.png";
+import Jeffrey from "../assets/grupp2/profile/Jeffrey.png";
+import Josefine from "../assets/grupp2/profile/Josefine.png";
 import Exclamation from "../assets/grupp1/icons/exclamation.svg";
 import Context from "../assets/grupp2/icons/context.svg";
 import Gap from "../assets/grupp2/icons/gap.svg";
@@ -109,46 +116,46 @@ export default function Grupp2() {
 							<h3 className="text-4xl font-semibold">Our Team</h3>
 							<div className="pt-6 grid grid-cols-4">
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Jeffrey} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Jeffrey Chang</p>
 								</div>
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Astrid} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Astrid Celedon</p>
 								</div>
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Josefine} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Josefine Rafstedt</p>
 								</div>
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Zaky} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Zaky Dzulfikar Harun</p>
 								</div>
 							</div>
 							<div className="px-16 pt-16 w-3/4 mx-auto grid grid-cols-3 justify-items-center gap-16 ">
 								<div className=" flex flex-col items-center justify-center gap-6 ">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Warisatil} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Warisatil Ilmi</p>
 								</div>
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Kim} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Kim Kleczkowski</p>
 								</div>
 								<div className=" flex flex-col items-center justify-center gap-6 w-42">
-									<figure className="w-36 h-36 rounded-full bg-[#F9C9FF]">
-										{/* <img src="" alt="" /> */}
+									<figure className="w-36 h-36 rounded-full overflow-hidden">
+										<img className="w-full h-full" src={Frida} alt="" />
 									</figure>
 									<p className="text-xl font-medium whitespace-nowrap">Frida Lantz Bergkvist</p>
 								</div>

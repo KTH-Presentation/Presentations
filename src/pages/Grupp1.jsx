@@ -26,6 +26,13 @@ import Structure from "../assets/grupp1/icons/structure.svg";
 import Search from "../assets/grupp1/icons/structure.svg";
 import Together from "../assets/grupp1/icons/together.svg";
 import Questions from "../assets/grupp1/icons/questions.svg";
+import Anthon from "../assets/grupp1/profile/Anthon.png";
+import Alexander from "../assets/grupp1/profile/Alexander.png";
+import Peter from "../assets/grupp1/profile/Peter.png";
+import Oliver from "../assets/grupp1/profile/Oliver.png";
+import Revan from "../assets/grupp1/profile/Revan.png";
+import Oskar from "../assets/grupp1/profile/Oskar.png";
+import Mike from "../assets/grupp1/profile/Mike.png";
 import Graph1 from "../assets/grupp1/graph1.png";
 import Graph2 from "../assets/grupp1/graph2.png";
 import Landscape from "../assets/grupp1/landscape.png";
@@ -137,46 +144,46 @@ export default function Grupp1() {
 						<h3 className="px-16 text-4xl font-semibold">Our Team</h3>
 						<div className="max-w-[1800px] px-16 pt-16 grid grid-cols-4">
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									<img src={null} alt="" />
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Oskar} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Oskar Carlsson</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									<img src={null} alt="" />
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Peter} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Peter Carlsson</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									<img src={null} alt="" />
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Revan} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Revan Koc</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Oliver} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Oliver Klinte</p>
 							</div>
 						</div>
 						<div className="px-16 pt-16 w-3/4 mx-auto grid grid-cols-3 justify-items-center gap-16 ">
 							<div className=" flex flex-col items-center justify-center gap-6 ">
-								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Anthon} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Anthon Yotsanan</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
-								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									{/* <img src="" alt="" /> */}
+								<figure className="w-36 h-36 rounded-full overflow-hidden">
+									<img className="w-full h-full" src={Mike} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Mike Chu</p>
 							</div>
 							<div className=" flex flex-col items-center justify-center gap-6 w-42">
 								<figure className="w-36 h-36 rounded-full bg-[#007BC7]">
-									{/* <img src="" alt="" /> */}
+									<img className="w-full h-full" src={Alexander} alt="" />
 								</figure>
 								<p className="text-2xl font-medium">Alexander Lundin</p>
 							</div>
