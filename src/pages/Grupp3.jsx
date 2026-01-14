@@ -425,30 +425,41 @@ function Slide5Content() {
     <div className="h-screen w-full px-16 py-20">
       <h2 className="text-6xl font-semibold mb-16">Interviewee List</h2>
 
-      <div className="grid grid-cols-3 gap-x-12 gap-y-8 max-w-[1500px]">
-        {/* Column 1 */}
-        <InterviewCard letter="A" title="IT Manager" subtitle="Housing Company A" />
-        <InterviewCard letter="D" title="Customer Service and Waste Manager" />
-        <InterviewCard letter="G" title="Property Manager 2, Area V" subtitle="Housing Company A" />
-        <InterviewCard letter="J" title="Business Developer" subtitle="Social Non-Profit Organization" />
-        <InterviewCard letter="M" title="Residents 1–4" />
+      <div className="max-w-[1500px] grid grid-cols-3 gap-x-12">
+        {/* Column 1: A–E */}
+        <div className="flex flex-col gap-y-8">
+          <InterviewCard letter="A" title="IT Manager" subtitle="Housing Company A" />
+          <InterviewCard letter="B" title="Community Developer Area V" subtitle="Housing Company A" />
+          <InterviewCard letter="C" title="Environmental Strategist" subtitle="Housing Company A" />
+          <InterviewCard letter="D" title="Customer Service and Waste Manager" />
+          <InterviewCard letter="E" title="Property Coordinator Area V" subtitle="Housing Company A" />
+        </div>
 
-        {/* Column 2 */}
-        <InterviewCard letter="B" title="Community Developer Area V" subtitle="Housing Company A" />
-        <InterviewCard letter="E" title="Property Coordinator Area V" subtitle="Housing Company A" />
-        <InterviewCard letter="H" title="Business and Technology Consultant" />
-        <InterviewCard letter="K" title="Project Manager" subtitle="Green Tech Company" />
-        <InterviewCard letter="N" title="Waste Management Expert" />
+        {/* Column 2: F–J */}
+        <div className="flex flex-col gap-y-8">
+          <InterviewCard letter="F" title="Property Manager 1, Area V" subtitle="Housing Company A" />
+          <InterviewCard letter="G" title="Property Manager 2, Area V" subtitle="Housing Company A" />
+          <InterviewCard letter="H" title="Business and Technology Consultant" />
+          <InterviewCard
+            letter="I"
+            title="Resident Behaviour Specialist & Former CEO"
+            subtitle="Real Estate Company"
+          />
+          <InterviewCard letter="J" title="Business Developer" subtitle="Social Non-Profit Organization" />
+        </div>
 
-        {/* Column 3 */}
-        <InterviewCard letter="C" title="Environmental Strategist" subtitle="Housing Company A" />
-        <InterviewCard letter="F" title="Property Manager 1, Area V" subtitle="Housing Company A" />
-        <InterviewCard letter="I" title="Resident Behaviour Specialist & Former CEO" subtitle="Real Estate Company" />
-        <InterviewCard letter="L" title="Property Manager" subtitle="Housing Company B" />
+        {/* Column 3: K–N */}
+        <div className="flex flex-col gap-y-8">
+          <InterviewCard letter="K" title="Project Manager" subtitle="Green Tech Company" />
+          <InterviewCard letter="L" title="Property Manager" subtitle="Housing Company B" />
+          <InterviewCard letter="M" title="Resident 1,2,3, and 4" />
+          <InterviewCard letter="N" title="Expert in waste management" />
+        </div>
       </div>
     </div>
   );
 }
+
 
 function InterviewCard({ letter, title, subtitle }) {
   return (
@@ -1153,5 +1164,3 @@ function Slide15Content() {
     </div>
   );
 }
-
-
