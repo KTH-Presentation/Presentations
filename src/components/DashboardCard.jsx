@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 const DashboardCard = ({
-  title, leadingText, logos, background, navigateTo
+  title, leadingText, description, logos, background, navigateTo
 }) => {
 
   const navigate = useNavigate();
@@ -23,11 +23,14 @@ const DashboardCard = ({
         max-h-full min-h-72 cursor-pointer rounded-xl flex flex-col justify-between py-10 px-8 xl:px-16 transition-transform duration-200 hover:scale-105 hover:shadow-xl"
     >
       <div>
-        <h2 className="text-2xl font-semibold mb-3">
+        <h2 className="text-2xl font-semibold">
           {title}
         </h2>
-        <p className="mb-4">
+        <p className="mb-4 font-medium">
           {leadingText}
+        </p>
+        <p className="mb-4">
+          {description}
         </p>
       </div>
 
